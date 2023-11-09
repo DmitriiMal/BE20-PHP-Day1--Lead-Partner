@@ -10,7 +10,7 @@
 </head>
 <body>
       <!-- --------------------------------- -->
-      <!-- ------------- Navbar------------- -->
+      <!-- ------------- Navbar ------------ -->
       <!-- --------------------------------- -->
       <nav
         class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top opacity-75">
@@ -46,7 +46,23 @@
       </nav>
 
       <!-- --------------------------------- -->
-      <!-- ------------- Header------------- -->
+      <!-- -------------- PHP -------------- -->
+      <!-- --------------------------------- -->
+
+<?php
+$cars = [
+  ['Toyota', 'Camry', 'Red', 'Leopoldstadt', 'price', 'availability', 'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'],
+  ['Honda', 'Civic', 'Blue', 'Margareten', 'price', 'Avalable', 'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'],
+  ['Ford', 'Focus', 'Silver', 'Meidling', 'price', 'Avalable', 'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'],
+  ['Chevrolet', 'Malibu', 'Black', 'Hietzing', 'price', 'Not valable', 'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'],
+  ['Kia', 'Optima', 'Gray', 'Hietzing', 'price', 'Not valable', 'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'],
+  ['Nissan', 'Altima', 'White', 'Ottakring', 'price', 'Avalable', 'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60']
+  ]
+?>
+
+
+      <!-- --------------------------------- -->
+      <!-- ------------- Header ------------ -->
       <!-- --------------------------------- -->
 
       <header class="hero">
@@ -54,39 +70,53 @@
       </header>
 
         <!-- ------------------------------- -->
-        <!-- -------- Grid contauner-------- -->
+        <!-- -------- Grid contauner ------- -->
         <!-- ------------------------------- -->
-        
+
         <div class="container h-100 ">
         <div
           id="result"
-          class="grid-container row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+          class=" grid-container row row-cols-xs-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
           <!-- card starts -->
-          <div>
-          <div class="card shadow-lg my-card my-4">
-            <div class="card-body">
-              <img
-                src="https://images.unsplash.com/photo-1474039369477-5e74ff1f0e57?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="..." />
-              <h1 class="card-title text-center m-3">Mark</h1>
-              <p class="card-text text-center">Model</p>
-              <div class="border-top border-bottom pt-3">
-                <p>color</p>
-                <p>seats quantity</p>
-                <p class="fw-semibold">&euro; price</p>
-                
+          <?php 
+          foreach($cars as $car) {
+          echo "
+
+           <div>
+             <div class='card shadow-lg my-card my-4'>
+              <div class='card-body'>
+               <img src='$car[6]' alt=''>
+                <h1 class='card-title text-center m-3'>$car[0]</h1>
+                <p class='card-text text-center'>$car[1]</p>
+                <div class='border-top border-bottom pt-3'>
+                  <ul>
+                    <li>
+                      <p>$car[2]</p>
+                    </li>
+                    <li>
+                      <p>$car[3]</p>
+                    </li>
+                    <li>
+                      <p>$car[5]</p>
+                    </li>
+                  </ul>
+                  <p class='fw-semibold'>&euro; $car[4]</p>
+             
+                </div>
               </div>
-            </div>
-            <div class="card-body pt-0">
-              <button href="#" class="btn btn-success px-5">Book</button>
-          </div>
-        </div>
+              <div class='card-body pt-0'>
+                <button href='#' class='btn btn-success px-5'>Book</button>
+              </div>
+              </div>
+           </div>
+
+         ";}?>
           <!-- card ends -->
         </div>
       </div>
 
       <!-- --------------------------------- -->
-      <!-- ------------- Footer------------- -->
+      <!-- ------------- Footer ------------ -->
       <!-- --------------------------------- -->
 
       <footer class="bg-dark py-2 mt-2">
@@ -110,9 +140,9 @@
         </div>
       </footer>
 
-<?php
-
-?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
