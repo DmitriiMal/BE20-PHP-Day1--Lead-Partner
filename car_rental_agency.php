@@ -91,13 +91,13 @@ $cars = [
                 <div class='border-top border-bottom pt-3'>
                   <ul>
                     <li>
-                      <p>$car[2]</p>
+                      $car[2]
                     </li>
                     <li>
-                      <p>$car[3]</p>
+                      $car[3]
                     </li>
                     <li>
-                      <p>$car[5]</p>
+                      $car[5]
                     </li>
                   </ul>
                   <p class='fw-semibold'>&euro; $car[4]</p>
