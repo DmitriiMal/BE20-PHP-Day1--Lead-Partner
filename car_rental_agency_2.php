@@ -51,62 +51,13 @@
 
 <?php
 $cars = [
-  [
-      'make' => 'Toyota',
-      'model' => 'Camry',
-      'color' => 'Gray',
-      'location' => 'Leopoldstadt',
-      'price_per_day' => 50,
-      'availability' => true,
-      'img' => 'https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-  ],
-  [
-      'make' => 'Honda',
-      'model' => 'Civic',
-      'color' => 'Red',
-      'location' => 'Margareten',
-      'price_per_day' => 45,
-      'availability' => true,
-      'img' => 'https://images.unsplash.com/photo-1570303278489-041bd897a873?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8SG9uZGElMjBDaXZpY3xlbnwwfHwwfHx8MA%3D%3D'
-  ],
-  [
-      'make' => 'Ford',
-      'model' => 'Focus',
-      'color' => 'White',
-      'location' => 'Meidling',
-      'price_per_day' => 55,
-      'availability' => true,
-      'img' => 'https://images.unsplash.com/photo-1625179298498-9deecbfa38cb?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-  ],
-  [
-      'make' => 'Chevrolet',
-      'model' => 'Malibu',
-      'color' => 'Cherry',
-      'location' => 'Hietzing',
-      'price_per_day' => 60,
-      'availability' => false,
-      'img' => 'https://images.unsplash.com/photo-1675933517822-d902a064a998?q=80&w=2863&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-  ],
-  [
-      'make' => 'Kia',
-      'model' => 'Optima',
-      'color' => 'Black',
-      'location' => 'Hietzing',
-      'price_per_day' => 55,
-      'availability' => false,
-      'img' => 'https://images.unsplash.com/photo-1592805723127-004b174a1798?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-  ],
-  [
-      'make' => 'Nissan',
-      'model' => 'Altima',
-      'color' => 'White',
-      'location' => 'Ottakring',
-      'price_per_day' => 50,
-      'availability' => true,
-      'img' => 'https://images.unsplash.com/photo-1531921391719-ca49c9b4c810?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  ['Toyota', 'Camry', 'Red', 'Leopoldstadt', 'price', 'availability', 'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'],
+  ['Honda', 'Civic', 'Blue', 'Margareten', 'price', 'Avalable', 'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'],
+  ['Ford', 'Focus', 'Silver', 'Meidling', 'price', 'Avalable', 'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'],
+  ['Chevrolet', 'Malibu', 'Black', 'Hietzing', 'price', 'Not valable', 'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'],
+  ['Kia', 'Optima', 'Gray', 'Hietzing', 'price', 'Not valable', 'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60'],
+  ['Nissan', 'Altima', 'White', 'Ottakring', 'price', 'Avalable', 'https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60']
   ]
-];
-
 ?>
 
 
@@ -128,38 +79,38 @@ $cars = [
           class=" grid-container row row-cols-xs-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-3">
           <!-- card starts -->
           <?php 
-          foreach($cars as $car): ?>
+          foreach($cars as $car) {
+          echo "
 
            <div>
-             <div class="card shadow-lg my-card my-4">
-              <div class="card-body">
-               <img src="<?= $car['img'] ?>" alt="">
-                <h3 class="card-title text-center m-3"><?= $car['make'] ?></h3>
-                <h5 class="card-text text-center"><?= $car['model'] ?></h5>
-                <div class="border-top border-bottom pt-3">
+             <div class='card shadow-lg my-card my-4'>
+              <div class='card-body'>
+               <img src='$car[6]' alt=''>
+                <h1 class='card-title text-center m-3'>$car[0]</h1>
+                <p class='card-text text-center'>$car[1]</p>
+                <div class='border-top border-bottom pt-3'>
                   <ul>
                     <li>
-                    <?= $car['color'] ?>
+                      $car[2]
                     </li>
                     <li>
-                    <?= $car['location'] ?>
+                      $car[3]
                     </li>
                     <li>
-                    <?= $car['availability'] ?>
+                      $car[5]
                     </li>
                   </ul>
-                  <p class="fw-semibold">&euro; <?= $car['price_per_day'] ?> /day</p>
+                  <p class='fw-semibold'>&euro; $car[4]</p>
              
                 </div>
               </div>
-              <div class="card-body pt-0">
-                <button href="#" class="btn btn-success px-5">Book</button>
+              <div class='card-body pt-0'>
+                <button href='#' class='btn btn-success px-5'>Book</button>
               </div>
               </div>
            </div>
 
-         
-         <?php endforeach; ?>
+         ";}?>
           <!-- card ends -->
         </div>
       </div>
