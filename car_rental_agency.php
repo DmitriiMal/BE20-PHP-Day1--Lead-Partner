@@ -132,8 +132,8 @@ $cars = [
 
            <div>
              <div class="card shadow-lg my-card my-4">
+               <img class="card-img-top" src="<?= $car['img'] ?>" alt="">
               <div class="card-body">
-               <img src="<?= $car['img'] ?>" alt="">
                 <h3 class="card-title text-center m-3"><?= $car['make'] ?></h3>
                 <h5 class="card-text text-center"><?= $car['model'] ?></h5>
                 <div class="border-top border-bottom pt-3">
